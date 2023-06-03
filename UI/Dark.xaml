@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Buttons -->
+    <SolidColorBrush x:Key="ButtonBackground" Color="#FF002C7B"/>
+    <SolidColorBrush x:Key="ButtonForeGround" Color="#FF0046C3"/>
+    
+    
+    <!-- Window -->
+
+    <Color x:Key="BorderStop1">#FF0059FF</Color>
+    <Color x:Key="BorderStop2">#FFB200FF</Color>
+
+
+
+</ResourceDictionary>

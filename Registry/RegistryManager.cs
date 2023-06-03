@@ -48,6 +48,6 @@ namespace ProcHacker
                     }
             };
 
-        private static void OutputRegistryError(string _error) => MessageBox.Show(_error, "Registry Error");
+        private static void OutputRegistryError(string _error) => MessageBox.Show(_error, "Registry Error", MessageBoxButton.OK, MessageBoxImage.Error);
     }
 }

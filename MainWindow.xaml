@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProcHacker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStyle="None"
+        >
     <Grid>
-        
+        <Border CornerRadius="10" BorderThickness="10">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource BorderStop1}" Offset="0"/>
+                    <GradientStop Color="{StaticResource BorderStop2}" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+        </Border>
     </Grid>
 </Window>

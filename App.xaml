@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:ProcHacker"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="/UI/Dark.xaml"/>
     </Application.Resources>
 </Application>

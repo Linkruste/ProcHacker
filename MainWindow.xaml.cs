@@ -20,9 +20,11 @@ namespace ProcHacker
     /// </summary>
     public partial class MainWindow : Window
     {
+        const string procname = "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz";
         public MainWindow()
         {
             InitializeComponent();
+            RegistryManager.OverWriteKey(new Key("ProcessorNameString", "intaile caure", "HKLM:/HARDWARE/DESCRIPTION/System/CentralProcessor/0"));
         }
     }
 }
