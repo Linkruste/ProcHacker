@@ -5,6 +5,9 @@
 This program is meant to help you change your CPU name in a few clicks. (you don't need no more YouTube tutorials)
 
 ## How to do it ?
+
+![image](https://github.com/Linkruste/ProcHacker/assets/74532664/83a28dd7-b329-449d-899f-ef471168cd75)
+
 Open the program (ProcHacker.exe) as administrator, under the first button in the main view type your new CPU's name, click on the big button with a pen drawing on a microcontroller, and that's it !
 
 ## What are those other controls for ?
@@ -14,6 +17,11 @@ You can also close the window easily, by scrollwheel-clicking on the window. If 
 ## And that big wen ?
 That button is used to get and display the *actual* CPU name. Like, how the PC recognize it.
 If you click on it, your *actual* CPU name will display just under that big wen.
+
+![image](https://github.com/Linkruste/ProcHacker/assets/74532664/438714b4-2c86-4823-b1f3-19226df65c73)
+
+
+![image](https://github.com/Linkruste/ProcHacker/assets/74532664/3a4e5789-e0d6-40a0-8001-5d2e1b69448d)
 
 
 *Currently only available in English*
