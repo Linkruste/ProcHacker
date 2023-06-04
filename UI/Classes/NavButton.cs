@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-using System.Windows;
-using System.Windows.Automation.Peers;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 

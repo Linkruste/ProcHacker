@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace ProcHacker
+﻿namespace ProcHacker
 {
     class Key
     {
@@ -15,7 +13,7 @@ namespace ProcHacker
         /// With the key's type name, finds the real key location in registry. Usage: <code>KeyPath["KeyType.ProcessorName"]</code>
         /// This feature exists in case more Keys could be modified in the future.
         /// </summary>
-        public static Dictionary<KeyType, string> KeyPath { get; private set; } = new Dictionary<KeyType, string>()
+        public static System.Collections.Generic.Dictionary<KeyType, string> KeyPath { get; private set; } = new System.Collections.Generic.Dictionary<KeyType, string>()
         {
             { KeyType.ProcessorName, "HKLM:/HARDWARE/DESCRIPTION/System/CentralProcessor/0" }
         };
