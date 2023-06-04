@@ -30,6 +30,6 @@ Yes ! This app only works on Windows and uses Microsoft Powershell to interact w
 It's your time to test ;)
 
 ![image](https://github.com/Linkruste/ProcHacker/assets/74532664/3a4e5789-e0d6-40a0-8001-5d2e1b69448d)
-
+*Oh and yeah, changes made with this program disappear after the computer restarts.*
 
 *Currently only available in English*
