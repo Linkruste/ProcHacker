@@ -20,7 +20,8 @@ If you click on it, your *actual* CPU name will display just under that big wen.
 
 ![image](https://github.com/Linkruste/ProcHacker/assets/74532664/438714b4-2c86-4823-b1f3-19226df65c73)
 
-![image](https://github.com/Linkruste/ProcHacker/assets/74532664/64432df9-1dd7-46ee-8054-25c7f95134f3)
+
+![image](https://github.com/Linkruste/ProcHacker/assets/74532664/3a4e5789-e0d6-40a0-8001-5d2e1b69448d)
 
 
 *Currently only available in English*
