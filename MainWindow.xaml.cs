@@ -46,11 +46,28 @@ namespace ProcHacker
                 new NavButton((SolidColorBrush)GetResource("color3"), "Settings",   (Style)GetResource("NavButton"), new Image { Source = new BitmapImage(new Uri("/UI/Assets/Settings.png", UriKind.Relative)) }, NavContainer)
             };
         }
-
+        /// <summary>
+        /// Changes the displayed tab according to the radio button clicked in the left NavPanel.
+        /// </summary>
+        /// <returns>The current tab.</returns>
         int changeTab(NavButton sender)
         {
             activeTab = sender.Tab;
-            //MessageBox.Show($"{activeTab}");
+            switch (activeTab)
+            {
+                // CPU tab
+                case 0:
+                    CPUContent.Visibility = Visibility.Visible;
+                    SettingsContent.Visibility = Visibility.Collapsed;
+                    break;
+                // Settings tab
+                case 1:
+                    CPUContent.Visibility = Visibility.Collapsed;
+                    SettingsContent.Visibility = Visibility.Visible;
+                    break;
+                default:
+                    break;
+            }
             return activeTab;
         }
 
@@ -119,7 +136,7 @@ namespace ProcHacker
         /// </summary>
         private void InitUI()
         {
-            Content.Children.Clear();
+            CPUContent.Children.Clear();
 
             Button _EditCPUButton = new Button
             {
@@ -183,10 +200,10 @@ namespace ProcHacker
             _wrapper.Child = Txtbx2;
 
 
-            Content.Children.Add(_EditCPUButton);
-            Content.Children.Add(Txtbx1);
-            Content.Children.Add(_ViewCPUButton);
-            Content.Children.Add(_wrapper);
+            CPUContent.Children.Add(_EditCPUButton);
+            CPUContent.Children.Add(Txtbx1);
+            CPUContent.Children.Add(_ViewCPUButton);
+            CPUContent.Children.Add(_wrapper);
 
             Txtb1 = Txtbx1;
             Txtb2 = Txtbx2;

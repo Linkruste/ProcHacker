@@ -59,8 +59,22 @@
                             <RowDefinition/>
                             <RowDefinition Height=" 20*"/>
                         </Grid.RowDefinitions>
-
-                        <Grid Grid.Row="2" Name="Content">
+                        <!-- CPU Content -->
+                        <Grid Grid.Row="2" Name="CPUContent">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition/>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
+                        </Grid>
+                        <!-- Settings -->
+                        <Grid Grid.Row="2" Name="SettingsContent">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
