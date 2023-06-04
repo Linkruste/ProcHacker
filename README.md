@@ -20,6 +20,14 @@ If you click on it, your *actual* CPU name will display just under that big wen.
 
 ![image](https://github.com/Linkruste/ProcHacker/assets/74532664/438714b4-2c86-4823-b1f3-19226df65c73)
 
+## Is it safe ?
+Only 3 antiviruses flag ProcHacker.exe as malicious as an anonymous virus, detected by AI/ It's not malicious at all. If you don't trust me, read the code and compile it yourself.
+
+## Something to add ?
+Yes ! This app only works on Windows and uses Microsoft Powershell to interact with the Registry for technical reasons. If your powershell installation as a program isn't working properly, maybe the program will encounter problems too.
+
+## Let's play !
+It's your time to test ;)
 
 ![image](https://github.com/Linkruste/ProcHacker/assets/74532664/3a4e5789-e0d6-40a0-8001-5d2e1b69448d)
 
