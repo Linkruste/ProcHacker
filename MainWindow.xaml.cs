@@ -14,7 +14,7 @@ namespace ProcHacker
 	/// </summary>
 	static class GlobalSettings
 	{
-		public static int currentTheme = 0;
+		public static int currentTheme = 1;
 	}
 
 	public partial class MainWindow : Window
