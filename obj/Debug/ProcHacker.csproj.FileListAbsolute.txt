@@ -24,7 +24,6 @@ C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\MainWindow.g.cs
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\App.g.cs
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\ProcHacker_MarkupCompile.cache
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\ProcHacker_MarkupCompile.lref
-C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\App.baml
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\MainWindow.baml
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\ProcHacker.g.resources
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\ProcHacker.Properties.Resources.resources
@@ -33,3 +32,7 @@ C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\ProcHacker.cspro
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\ProcHacker.csproj.CopyComplete
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\ProcHacker.exe
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\ProcHacker.pdb
+C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\UI\Global warning.baml
+C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\UI\Reddish.baml
+C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\UI\DeepSea.baml
+C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\App.baml

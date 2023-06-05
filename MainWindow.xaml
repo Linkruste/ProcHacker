@@ -37,7 +37,7 @@
                     </Border.Background>
                     <StackPanel Name="NavContainer">
                         <!-- Brand, clear at startup, just here to have an idea of the design -->
-                        <StackPanel Height="30" Margin="10, 30, 0, 40" Orientation="Horizontal">
+                        <StackPanel Height="30" Margin="10, 30, 0, 40" Orientation="Horizontal" MouseDown="EasterEgg">
                             <Image Source="/UI/Assets/CPU.png" Height="30" HorizontalAlignment="Left"/>
                             <TextBlock Text="ProcHacker" FontFamily="Candara" Margin="10,0,0,0" Foreground="{StaticResource Title1}"  VerticalAlignment="Center" FontSize="16"/>
                         </StackPanel>
@@ -91,5 +91,5 @@
                 </Border>
             </Grid>
 		</Border>
-	</Grid>
+    </Grid>
 </Window>

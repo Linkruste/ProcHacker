@@ -2,8 +2,8 @@
 					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <!-- Buttons -->
-    <SolidColorBrush x:Key="ButtonBackground" Color="#FF373737"/>
-    <SolidColorBrush x:Key="ButtonForeGround" Color="#FF585858"/>
+    <SolidColorBrush x:Key="ButtonBackground" Color="#FF002C7B"/>
+    <SolidColorBrush x:Key="ButtonForeGround" Color="#FF0046C3"/>
 
     <!-- Buttons Color Theme -->
     <SolidColorBrush x:Key="color3" Color="#FFFD3025"/>
@@ -13,26 +13,26 @@
 
     <!-- Window -->
 
-    <Color x:Key="BorderStop1">#FF727272</Color>
-    <Color x:Key="BorderStop2">#FF909090</Color>
+    <Color x:Key="BorderStop1">#FF0059FF</Color>
+    <Color x:Key="BorderStop2">#FFB200FF</Color>
 
     <!-- NavPanel -->
 
-    <Color x:Key="NavPanelStop1">#FF454545</Color>
-    <Color x:Key="NavPanelStop2">#FF555555</Color>
-    <SolidColorBrush x:Key="NavPanelOverButton">#FF656565</SolidColorBrush>
-    <SolidColorBrush x:Key="NavPanelActiveButton">#FF757575</SolidColorBrush>
+    <Color x:Key="NavPanelStop1">#FF004090</Color>
+    <Color x:Key="NavPanelStop2">#FF0060A0</Color>
+    <SolidColorBrush x:Key="NavPanelOverButton">#FF0070c0</SolidColorBrush>
+    <SolidColorBrush x:Key="NavPanelActiveButton">#FF5050c0</SolidColorBrush>
 
     <!-- ContentPanel -->
 
-    <Color x:Key="ContentPanelStop1">#FF303030</Color>
-    <Color x:Key="ContentPanelStop2">#FF3A3A3A</Color>
+    <Color x:Key="ContentPanelStop1">#FF002070</Color>
+    <Color x:Key="ContentPanelStop2">#FF003080</Color>
 
     <!-- Text and titles -->
 
-    <SolidColorBrush x:Key="Title1">#FFE3E3E3</SolidColorBrush>
-    <SolidColorBrush x:Key="Text1">#FFC2C2C2</SolidColorBrush>
-    <SolidColorBrush x:Key="ActiveText1">#FFD7D7D7</SolidColorBrush>
+    <SolidColorBrush x:Key="Title1">#FFFFcbdf</SolidColorBrush>
+    <SolidColorBrush x:Key="Text1">#FFAB9Cff</SolidColorBrush>
+    <SolidColorBrush x:Key="ActiveText1">#FFCCBBff</SolidColorBrush>
 
     <!-- Buttons -->
     <Style x:Key="NavButton" TargetType="RadioButton">

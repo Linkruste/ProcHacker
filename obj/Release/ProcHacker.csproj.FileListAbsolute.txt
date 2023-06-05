@@ -33,3 +33,6 @@ C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Release\ProcHacker.csp
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Release\ProcHacker.csproj.CopyComplete
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Release\ProcHacker.exe
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Release\ProcHacker.pdb
+C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Release\UI\DeepSea.baml
+C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Release\UI\Global warning.baml
+C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Release\UI\Reddish.baml
