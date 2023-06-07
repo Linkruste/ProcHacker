@@ -59,6 +59,9 @@ namespace ProcHacker
             return true;
         }
 
+        /// <summary>
+        /// Compare the time took to execute the same tasks with two methods.
+        /// </summary>
         public static void Compare()
         {
             string _procName = ReadNoPS(new Key(Key.KeyPath[Key.KeyType.ProcessorName], "ProcessorNameString"));

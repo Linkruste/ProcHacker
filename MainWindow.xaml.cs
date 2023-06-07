@@ -45,7 +45,7 @@ namespace ProcHacker
             InitButtonsList();
 			InitButtons();
 			((RadioButton)NavContainer.Children[1]).IsChecked = true;
-			RegistryManager.Compare();
+			//RegistryManager.Compare();
 		}
 
 		/// <summary>
