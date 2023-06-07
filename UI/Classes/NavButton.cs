@@ -20,12 +20,11 @@ namespace ProcHacker.UI.Classes
         /// <summary>
         /// Creates the navigation radio button
         /// </summary>
-        /// <param Tag="_tag"></param>
-        /// <param Text="_text"></param>
-        /// <param Style="_style"></param>
-        /// <param Icon="_icon"></param>
-        /// <param Parent="_parent"></param>
-        public NavButton(SolidColorBrush _tag, string _text, Style _style, Image _icon, StackPanel _parent)
+        /// <param name="_tag">Color tag used for the button</param>
+        /// <param name="_text">Text displayed inside the button</param>
+        /// <param name="_style">Resource style used to display the button</param>
+        /// <param name="_icon">Icon inside the button</param>
+        public NavButton(SolidColorBrush _tag, string _text, Style _style, Image _icon)
         {
             Tag = _tag;
             Text = _text;
@@ -36,7 +35,7 @@ namespace ProcHacker.UI.Classes
         /// <summary>
         /// Displays the button from the specified StackPanel parent
         /// </summary>
-        /// <param Parent="_parent"></param>
+        /// <param name="_parent"></param>
         public void Create(StackPanel _parent)
         {
             Button = new RadioButton() { Style = Style, Tag = Tag };

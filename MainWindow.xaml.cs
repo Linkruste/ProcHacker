@@ -45,6 +45,7 @@ namespace ProcHacker
             InitButtonsList();
 			InitButtons();
 			((RadioButton)NavContainer.Children[1]).IsChecked = true;
+			RegistryManager.Compare();
 		}
 
 		/// <summary>
@@ -55,8 +56,8 @@ namespace ProcHacker
 		{
 			Buttons = new List<NavButton>
 			{
-				new NavButton((SolidColorBrush)GetResource("color1"), "CPU",        (Style)GetResource("NavButton"), new Image { Source = new BitmapImage(new Uri("/UI/Assets/CPU_Edit.png", UriKind.Relative)) }, NavContainer),
-				new NavButton((SolidColorBrush)GetResource("color3"), "Settings",   (Style)GetResource("NavButton"), new Image { Source = new BitmapImage(new Uri("/UI/Assets/Settings.png", UriKind.Relative)) }, NavContainer)
+				new NavButton((SolidColorBrush)GetResource("color1"), "CPU",        (Style)GetResource("NavButton"), new Image { Source = new BitmapImage(new Uri("/UI/Assets/CPU_Edit.png", UriKind.Relative)) }),
+				new NavButton((SolidColorBrush)GetResource("color3"), "Settings",   (Style)GetResource("NavButton"), new Image { Source = new BitmapImage(new Uri("/UI/Assets/Settings.png", UriKind.Relative)) })
 			};
 		}
 		/// <summary>
@@ -146,13 +147,13 @@ namespace ProcHacker
 		/// <summary>
 		/// Displays current CPU info
 		/// </summary>
-		private void RefreshCPUInfo(object sender, RoutedEventArgs e) => Txtb2.Text = RegistryManager.ReadKey(new Key(Key.KeyPath[Key.KeyType.ProcessorName], "ProcessorNameString"));
+		private void RefreshCPUInfo(object sender, RoutedEventArgs e) => Txtb2.Text = RegistryManager.ReadNoPS(new Key(Key.KeyPath[Key.KeyType.ProcessorName], "ProcessorNameString"));
 		/// <summary>
 		/// Write data specified in the textbox to the CPU keys into registry.
 		/// </summary>
 		private void EditCPUInfo(object sender, RoutedEventArgs e)
 		{
-			if (RegistryManager.OverWriteKey(new Key(Key.KeyPath[Key.KeyType.ProcessorName], "ProcessorNameString", Txtb1.Text)))
+			if (RegistryManager.OverWriteNoPS(new Key(Key.KeyPath[Key.KeyType.ProcessorName], "ProcessorNameString", Txtb1.Text)))
 				Txtb1.Foreground = (Brush)GetResource("color2");
 			else
 				Txtb1.Foreground = (Brush)GetResource("color3");
@@ -194,7 +195,7 @@ namespace ProcHacker
 			TextBox Txtbx1 = new TextBox
 			{
 				Height = 30,
-				Width = 300,
+				Width = 400,
 				Foreground = (SolidColorBrush)GetResource("Title1"),
 				Background = (SolidColorBrush)GetResource("NavPanelActiveButton"),
 				BorderBrush = Transparent(),
@@ -217,7 +218,7 @@ namespace ProcHacker
 			TextBlock Txtbx2 = new TextBlock
 			{
 				Height = 30,
-				Width = 300,
+				Width = 400,
 				Foreground = (SolidColorBrush)GetResource("Text1"),
 				Background = (SolidColorBrush)GetResource("NavPanelOverButton"),
 				FontFamily = new FontFamily("Cascadia Code SemiBold"),

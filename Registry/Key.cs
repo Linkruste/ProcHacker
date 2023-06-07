@@ -34,9 +34,9 @@
         /// <summary>
         /// Returns a new Key.
         /// </summary>
-        /// <param Path="_path"></param>
-        /// <param Name="_name"></param>
-        /// <param Value="_value"></param>
+        /// <param name="_path">The registry path where the key is stored</param>
+        /// <param name="_name">The key name</param>
+        /// <param name="_value">The Key's value. If null or empty, means it's used to look for a key value in the registry.</param>
         public Key(string _path, string _name, string _value="")
         {
             Name    = _name;
@@ -47,18 +47,25 @@
         /// <summary>
         /// Escapes all characters to avoid conflict with Microsoft PowerShell.
         /// </summary>
-        /// <param Command="_command"></param>
+        /// <param name="_command">Command to format to Windows PowerShelll format</param>
         /// <returns>A formatted command for Microsoft Powershell.</returns>
         string FormatForPowerShell(string _command) => _command.Replace(" ", "` ").Replace("(", "`(").Replace(")", "`)").Replace("@", "`@").Replace("[", "`[").Replace("]", "`]").Replace("{", "`{").Replace("}", "`}");
+        /// /// <summary>
+        /// Escapes all characters to avoid conflict with Windows Command Prompt.
+        /// </summary>
+        /// <param name="_command">Command to escape all necessary characters for Windows Command Prompt</param>
+        /// <returns>A formatted command for Microsoft Powershell.</returns>
+        public static string FormatForCmd(string _command) => _command.Replace("\"", "\\\"").Replace("/", "\\");
         /// <summary>
         /// Transforms the Key into a string Powershell command to set the Registry key.
         /// </summary>
         /// <returns>The key part of the command to set the registry key.</returns>
-        public string ToCommandString() => $"-Path \"{Path}\" -Name \"{Name}\" -Value \"{FormatForPowerShell(Value)}\"";
+        public string ToCommandString() => $"-Path \"{Path.Replace('/','\\')}\" -Name \"{Name}\" -Value \"{FormatForPowerShell(Value)}\"";
         /// <summary>
         /// Transforms the Key into a string to get the Registry key.
         /// </summary>
         /// <returns>The key part of the command to get the registry key.</returns>
-        public string ToGetString() => $"-Path \"{Path}\" -Name \"{Name}\"";
+        public string ToGetString() => $"-Path \"{Path.Replace('/', '\\')}\" -Name \"{Name}\"";
+        public string GetPath() => Path.Replace('/', '\\');
     }
 }
