@@ -6,7 +6,7 @@ This program is meant to help you change your CPU name in a few clicks. (you don
 
 ## How to do it ?
 
-![image](https://github.com/Linkruste/ProcHacker/assets/74532664/83a28dd7-b329-449d-899f-ef471168cd75)
+![image](https://github.com/Linkruste/ProcHacker/assets/74532664/423abe97-9a2e-44bd-a425-c090f86054ea)
 
 Open the program (ProcHacker.exe) as administrator, under the first button in the main view type your new CPU's name, click on the big button with a pen drawing on a microcontroller, and that's it !
 
@@ -18,18 +18,18 @@ You can also close the window easily, by scrollwheel-clicking on the window. If 
 That button is used to get and display the *actual* CPU name. Like, how the PC recognize it.
 If you click on it, your *actual* CPU name will display just under that big wen.
 
-![image](https://github.com/Linkruste/ProcHacker/assets/74532664/438714b4-2c86-4823-b1f3-19226df65c73)
+![image](https://github.com/Linkruste/ProcHacker/assets/74532664/eb15c8d7-034f-4cc7-aebb-b41537db8ac6)
 
 ## Is it safe ?
 Only 3 antiviruses flag ProcHacker.exe as malicious as an anonymous virus, detected by AI/ It's not malicious at all. If you don't trust me, read the code and compile it yourself.
 
 ## Something to add ?
-Yes ! This app only works on Windows and uses Microsoft Powershell to interact with the Registry for technical reasons. If your powershell installation as a program isn't working properly, maybe the program will encounter problems too.
+Yes ! This app only works on Windows and uses either Microsoft Powershell to interact with the Registry or Reg.exe. If your powershell installation or Windows Registry isn't working properly, maybe the program will encounter problems too.
 
 ## Let's play !
 It's your time to test ;)
 
-![image](https://github.com/Linkruste/ProcHacker/assets/74532664/3a4e5789-e0d6-40a0-8001-5d2e1b69448d)
+![image](https://github.com/Linkruste/ProcHacker/assets/74532664/493d4e0c-a1c1-44b5-b693-71b428208fae)
 *Oh and yeah, changes made with this program disappear after the computer restarts.*
 
 *Currently only available in English*
