@@ -29,7 +29,7 @@ Yes ! This app only works on Windows and uses either Microsoft Powershell to int
 ## Let's play !
 It's your time to test ;)
 
-![image](https://github.com/Linkruste/ProcHacker/assets/74532664/493d4e0c-a1c1-44b5-b693-71b428208fae)
+![image](https://github.com/Linkruste/ProcHacker/assets/74532664/c07ad850-5bbd-47ff-b957-e33012ea1f6f)
 *Oh and yeah, changes made with this program disappear after the computer restarts.*
 
 *Currently only available in English*
