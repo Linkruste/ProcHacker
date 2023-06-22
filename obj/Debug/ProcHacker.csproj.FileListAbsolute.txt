@@ -36,3 +36,4 @@ C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\UI\Global warnin
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\UI\Reddish.baml
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\UI\DeepSea.baml
 C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\App.baml
+C:\Users\matha\Documents\GitHub\ProcHacker\ProcHacker\obj\Debug\UI\StaticColors.baml

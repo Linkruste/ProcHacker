@@ -68,8 +68,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="FakeData\Processor.cs" />
+    <Compile Include="Registry\PerfAndTests.cs" />
     <Compile Include="Registry\RegistryManager.cs" />
+    <Compile Include="Tabs\General.cs" />
+    <Compile Include="Tools\ByteTools.cs" />
+    <Compile Include="UI\Classes\ActionButton.cs" />
     <Compile Include="UI\Classes\NavButton.cs" />
+    <Compile Include="UI\Classes\UITools.cs" />
+    <Compile Include="UserPreferences\Settings.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -98,6 +104,10 @@
     <Page Include="UI\Dark.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\StaticColors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -139,7 +149,13 @@
     <Resource Include="CPU.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UserPreferences\" />
+    <Resource Include="UI\Assets\SavePrefs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Assets\PerfTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Assets\CPUBook.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

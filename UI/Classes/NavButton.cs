@@ -50,9 +50,6 @@ namespace ProcHacker.UI.Classes
         }
 
 
-        public void button_Click(object sender, RoutedEventArgs e)
-        {
-            onClick?.Invoke(this);
-        }
+        public void button_Click(object sender, RoutedEventArgs e) => onClick?.Invoke(this);
     }
 }

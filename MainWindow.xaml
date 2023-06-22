@@ -11,22 +11,22 @@
 		WindowStyle="None"
         MouseDown="Window_MouseDown"
 		>
-	<Grid>
-		<Border CornerRadius="10" BorderThickness="3">
-			<Border.BorderBrush>
-				<LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-					<GradientStop Color="{StaticResource BorderStop1}" Offset="0"/>
-					<GradientStop Color="{StaticResource BorderStop2}" Offset="1"/>
-				</LinearGradientBrush>
-			</Border.BorderBrush>
-			<Grid>
-				<Grid.ColumnDefinitions>
-					<!--NavPanel-->
-					<ColumnDefinition/>
-					<!--ContentPanel-->
-					<ColumnDefinition Width="5*"/>
-				</Grid.ColumnDefinitions>
-                
+    <Grid>
+        <Border CornerRadius="10" BorderThickness="3">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="{StaticResource BorderStop1}" Offset="0"/>
+                    <GradientStop Color="{StaticResource BorderStop2}" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!--NavPanel-->
+                    <ColumnDefinition/>
+                    <!--ContentPanel-->
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+
                 <!--NavMenu-->
                 <Border Grid.Column="0" CornerRadius="10,0,0,10">
                     <Border.Background>
@@ -43,8 +43,8 @@
                         </StackPanel>
                     </StackPanel>
                 </Border>
-                
-				<!--ContentPanel-->
+
+                <!--ContentPanel-->
                 <Border Grid.Column="1" CornerRadius="0,10,10,0">
                     <Border.Background>
                         <LinearGradientBrush StartPoint="1,0" EndPoint="1,0.5">
@@ -59,37 +59,58 @@
                             <RowDefinition/>
                             <RowDefinition Height=" 20*"/>
                         </Grid.RowDefinitions>
-                        <!-- CPU Content -->
-                        <Grid Grid.Row="2" Name="CPUContent">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="2*"/>
-                                <RowDefinition/>
-                                <RowDefinition Height="2*"/>
-                                <RowDefinition/>
-                                <RowDefinition Height="2*"/>
-                            </Grid.RowDefinitions>
+                        <Grid Grid.Row="2" Name="TabContent">
+                            <!-- CPU Content -->
+                            <Grid Grid.Row="2" Name="CPUContent" Visibility="Collapsed">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="2*"/>
+                                </Grid.RowDefinitions>
+                            </Grid>
+                            <!-- Devices Library -->
+                            <Grid Grid.Row="2" Name="DevicesLibrary" Visibility="Collapsed">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="2*"/>
+                                </Grid.RowDefinitions>
+                            </Grid>
+                            <!-- Settings -->
+                            <Grid Grid.Row="2" Name="SettingsContent">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="2*"/>
+                                </Grid.RowDefinitions>
+                                <ListBox Grid.Column="1" Background="Transparent" BorderThickness="0">
+                                    <ListBoxItem>
+                                        
+                                    </ListBoxItem>
+                                </ListBox>
+                            </Grid>
                         </Grid>
-                        <!-- Settings -->
-                        <Grid Grid.Row="2" Name="SettingsContent">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="2*"/>
-                                <RowDefinition/>
-                                <RowDefinition Height="2*"/>
-                                <RowDefinition/>
-                                <RowDefinition Height="2*"/>
-                            </Grid.RowDefinitions>
-                        </Grid>
-                    </Grid>                    
+                    </Grid>
                 </Border>
             </Grid>
-		</Border>
+        </Border>
     </Grid>
 </Window>

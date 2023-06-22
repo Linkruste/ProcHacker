@@ -5,10 +5,7 @@
     <SolidColorBrush x:Key="ButtonBackground" Color="#FF373737"/>
     <SolidColorBrush x:Key="ButtonForeGround" Color="#FF585858"/>
 
-    <!-- Buttons Color Theme -->
-    <SolidColorBrush x:Key="color3" Color="#FFFD3025"/>
-    <SolidColorBrush x:Key="color2" Color="#FF20DB60"/>
-    <SolidColorBrush x:Key="color1" Color="#FF0090FB"/>
+
 
 
     <!-- Window -->

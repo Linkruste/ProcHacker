@@ -380,3 +380,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Unwanted DLLs
+*Newtonsoft.Jsondll
+
+#obj files
+obj/*

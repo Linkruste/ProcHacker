@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:ProcHacker"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <ResourceDictionary Source="/UI/DeepSea.xaml"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/UI/DeepSea.xaml"/>
+                <ResourceDictionary Source="/UI/StaticColors.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("cpu.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ui/assets/saveprefs.png")]
 
 
