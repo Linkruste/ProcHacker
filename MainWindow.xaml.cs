@@ -78,8 +78,6 @@ namespace ProcHacker
 			Tabs[_index].Visibility = Visibility.Visible;
 		}
 
-
-
 		/// <summary>
 		/// Displays all buttons on the screen.
 		/// </summary>
