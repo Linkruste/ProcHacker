@@ -10,21 +10,10 @@ using ProcHacker.Tabs;
 
 namespace ProcHacker
 {
-	/// <summary>
-	/// The MainWindow destroys itself when changing theme, so I had to use a global value.
-	/// </summary>
-	static class GlobalSettings
-	{
-		public static bool hasJustStarted = true;
-		public static int currentTheme = 0;
-	}
-
 	public partial class MainWindow : Window
 	{
 		// It's mine though
-		const string origProcname = "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz";
-		// And this one is for tests
-		const string procname = "Barely working toaster 90Ghz";
+		public const string processorName = "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz";
 		// Folder where the images are stored
 		const string Assets = "/UI/Assets";
 		public List<NavButton> Buttons;
@@ -34,7 +23,6 @@ namespace ProcHacker
 		Image CPUEdit = new Image { Source = new BitmapImage(new Uri($"{Assets}/CPU_Edit.png", UriKind.Relative)) };
 		Image CPUView = new Image { Source = new BitmapImage(new Uri($"{Assets}/CPU_Overview.png", UriKind.Relative)) };
 		List<Grid> Tabs = null;
-
 
 		public MainWindow()
 		{
@@ -48,17 +36,11 @@ namespace ProcHacker
 
 		void StartUI()
 		{
-			GlobalSettings.hasJustStarted = false;
             InitUI();
             InitButtonsList();
             InitButtons();
             ToggleTab(0);
 			((RadioButton)NavContainer.Children[1]).IsChecked = true;
-			// From here, it's just startup things, not executed when program already started and just displays a new instance of this window.
-			if(GlobalSettings.hasJustStarted)
-			{
-				UserPreferences.Settings.Update();
-			}
         }
 
 		/// <summary>
@@ -96,22 +78,7 @@ namespace ProcHacker
 			Tabs[_index].Visibility = Visibility.Visible;
 		}
 
-		/// <summary>
-		/// Changes the current color scheme of the app.
-		/// </summary>
-		void ChangeTheme(int _themeIndex)
-		{
-			GlobalSettings.currentTheme = _themeIndex % UITools.Dictionaries.Themes.Count;
-			Application.Current.Resources.Clear();
-			Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary(){ Source = new Uri(UITools.Dictionaries.Themes[GlobalSettings.currentTheme], UriKind.Relative) });
-			Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary(){ Source = new Uri("/UI/StaticColors.xaml", UriKind.Relative) });
-			MainWindow _nMainWindow = new MainWindow();
-			MainWindow _oldWindow = (MainWindow)Application.Current.MainWindow;
-			Application.Current.MainWindow = _nMainWindow;
-			_oldWindow.Close();
-			Application.Current.MainWindow.Show();
-			GC.Collect();
-		}
+
 
 		/// <summary>
 		/// Displays all buttons on the screen.
@@ -137,7 +104,7 @@ namespace ProcHacker
 		/// An alias to get Resources faster.
 		/// </summary>
 		/// <returns>The resource specified by the given name.</returns>
-		object GetResource(string _name) => Application.Current.Resources[_name];
+		public static object GetResource(string _name) => Application.Current.Resources[_name];
 
 		private void Window_MouseDown(object sender, MouseButtonEventArgs e)
 		{
@@ -236,11 +203,11 @@ namespace ProcHacker
 				Txtb2 = Txtbx2;
 			}
 			#endregion Content relative to CPU actions
-			#region SETTINGS_CONTENT
-			{
-				// As you can see, still in progress
-				General.Settings(this, ref SettingsContent);
-			}
+			#region DEVICES_LIBRARY_CONTENT
+			General.DevicesLibrary(ref DevicesLibrary);
+            #endregion
+            #region SETTINGS_CONTENT
+            General.Settings(ref SettingsContent);
 			#endregion
 		}
 
@@ -249,8 +216,10 @@ namespace ProcHacker
 		/// </summary>
 		private void ResetTextBoxColor(object sender, TextChangedEventArgs e) => Txtb1.Foreground = (SolidColorBrush)GetResource("Title1");
 		/// <summary>
-		/// Used for testing and maybe, one day, for an easter egg. Triggered when we click on the brand name.
+		/// Used maybe, one day, for an easter egg. Triggered when we click on the brand name.
 		/// </summary>
-		private void EasterEgg(object sender, MouseButtonEventArgs e) => ChangeTheme(GlobalSettings.currentTheme+1);
-	}
+		private void EasterEgg(object sender, MouseButtonEventArgs e) => new System.Threading.Tasks.Task(new Action(EasterEggMethod)).Start();
+		private void EasterEggMethod() => MessageBox.Show("Congrats, you found it !", "ProcHacker easter egg", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+
+    }
 }

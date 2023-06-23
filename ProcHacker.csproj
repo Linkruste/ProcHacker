@@ -67,7 +67,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FakeData\LibManager.cs" />
     <Compile Include="FakeData\Processor.cs" />
+    <Compile Include="GlobalSettings.cs" />
     <Compile Include="Registry\PerfAndTests.cs" />
     <Compile Include="Registry\RegistryManager.cs" />
     <Compile Include="Tabs\General.cs" />
@@ -156,6 +158,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="UI\Assets\CPUBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Assets\AddDevice.png" />
+    <Resource Include="UI\Assets\RemoveDevice.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

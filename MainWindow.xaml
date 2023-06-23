@@ -89,7 +89,7 @@
                                 </Grid.RowDefinitions>
                             </Grid>
                             <!-- Settings -->
-                            <Grid Grid.Row="2" Name="SettingsContent">
+                            <Grid Grid.Row="2" Name="SettingsContent" Visibility="Visible">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>

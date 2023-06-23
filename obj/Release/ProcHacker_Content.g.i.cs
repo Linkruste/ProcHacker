@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ui/assets/saveprefs.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ui/assets/adddevice.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ui/assets/removedevice.png")]
 
 

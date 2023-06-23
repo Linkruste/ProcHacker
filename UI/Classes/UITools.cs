@@ -22,11 +22,31 @@ namespace ProcHacker.UI.Classes
 
             public static List<string> Themes = new List<string>
             {
-                $"{ThemesPath}/DeepSea.xaml", 
-                $"{ThemesPath}/Reddish.xaml", 
+                $"{ThemesPath}/DeepSea.xaml",
+                $"{ThemesPath}/Reddish.xaml",
                 $"{ThemesPath}/Global warning.xaml",
-                $"{ThemesPath}/Dark.xaml", 
+                $"{ThemesPath}/Dark.xaml",
             };
+        }
+
+        /// <summary>
+        /// Changes the current color scheme of the app.
+        /// </summary>
+        public static void ChangeTheme(int _themeIndex, bool _appHasJustStarted = true)
+        {
+            GlobalSettings.currentTheme = _themeIndex % UITools.Dictionaries.Themes.Count;
+            Application.Current.Resources.Clear();
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = new Uri(UITools.Dictionaries.Themes[GlobalSettings.currentTheme], UriKind.Relative) });
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = new Uri("/UI/StaticColors.xaml", UriKind.Relative) });
+            if (_appHasJustStarted)
+            {
+                MainWindow _nMainWindow = new MainWindow();
+                MainWindow _oldWindow = (MainWindow)Application.Current.MainWindow;
+                Application.Current.MainWindow = _nMainWindow;
+                _nMainWindow.Show();
+                _oldWindow.Close();
+            }
+            GC.Collect();
         }
     }
 }

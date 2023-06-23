@@ -33,6 +33,8 @@ namespace ProcHacker.UserPreferences
             System.IO.File.WriteAllBytes(settingsPath, _data);
             if (System.IO.File.ReadAllBytes(settingsPath)[0] == _result)
                 return _result;
+            if(ByteTools.Compare(_data, System.IO.File.ReadAllBytes(settingsPath)))
+                System.Windows.MessageBox.Show("Preferences were successfully saved !", "ProcHacker", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
             return _result.And(0b10);
         }
 
